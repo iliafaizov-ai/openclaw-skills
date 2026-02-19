@@ -1,0 +1,21 @@
+{
+  "tracking": {
+    "start_hour": 8,
+    "end_hour": 22,
+    "interval_minutes": 30,
+    "timezone": "Europe/Moscow"
+  },
+  "storage": {
+    "diary_path": "obsidian/1. Дневник",
+    "diary_template": "📋 Шаблон дня.md"
+  },
+  "weekly_report": {
+    "day": "friday",
+    "time": "19:00",
+    "auto_group": true
+  },
+  "prompts": {
+    "ask": "Чем занимался последние 30 минут?",
+    "weekly": "Сделай недельную сводку time tracking — сгруппируй активности и покажи статистику."
+  }
+}
