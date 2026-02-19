@@ -47,6 +47,9 @@ def generate_image(
     batch_size: int = 1,
     seed: Optional[int] = None,
     raw: bool = True,
+    aspect_ratio: Optional[str] = None,
+    resolution: Optional[str] = None,
+    image_urls: Optional[list] = None,
 ) -> str:
     """
     Submit image generation job to Krea.ai.
@@ -54,10 +57,7 @@ def generate_image(
     """
     endpoint_map = {
         "bfl/flux-1.1-pro-ultra": "generate/image/bfl/flux-1.1-pro-ultra",
-        "google/imagen-4-ultra": "generate/image/google/imagen-4-ultra",
-        "seedream-4": "generate/image/seedream-4",
-        "gpt-image": "generate/image/gpt-image",
-        "nano-banana-pro": "generate/image/nano-banana-pro",
+        "google/nano-banana-pro": "generate/image/google/nano-banana-pro",
     }
     
     endpoint = endpoint_map.get(model)
@@ -66,18 +66,29 @@ def generate_image(
     
     url = f"https://api.krea.ai/{endpoint}"
     
-    payload = {
-        "prompt": prompt,
-        "width": width,
-        "height": height,
-        "batchSize": batch_size,
-    }
-    
-    if seed is not None:
-        payload["seed"] = seed
-    
-    if model == "bfl/flux-1.1-pro-ultra" and raw:
-        payload["raw"] = True
+    # Build payload based on model
+    if model == "google/nano-banana-pro":
+        payload = {
+            "prompt": prompt,
+            "batchSize": batch_size,
+        }
+        if aspect_ratio:
+            payload["aspectRatio"] = aspect_ratio
+        if resolution:
+            payload["resolution"] = resolution
+        if image_urls:
+            payload["imageUrls"] = image_urls
+    else:  # Flux models
+        payload = {
+            "prompt": prompt,
+            "width": width,
+            "height": height,
+            "batchSize": batch_size,
+        }
+        if seed is not None:
+            payload["seed"] = seed
+        if raw:
+            payload["raw"] = True
     
     print(f"[SUBMIT] Model: {model}, Size: {width}x{height}, Batch: {batch_size}", file=sys.stderr)
     response = make_request(url, api_key, method="POST", data=payload)
@@ -135,6 +146,9 @@ def main() -> int:
     parser.add_argument("--batch-size", type=int, default=1, help="Number of images")
     parser.add_argument("--seed", type=int, help="Random seed (optional)")
     parser.add_argument("--no-raw", action="store_true", help="Disable raw mode for Flux")
+    parser.add_argument("--aspect-ratio", help="Aspect ratio (e.g. 16:9, 9:16) for Nano Banana Pro")
+    parser.add_argument("--resolution", help="Resolution (1K/2K/4K) for Nano Banana Pro")
+    parser.add_argument("--image-url", action="append", help="Reference image URL (can specify multiple)")
     parser.add_argument("--output-dir", default="./output", help="Output directory")
     parser.add_argument("--poll-interval", type=int, default=5, help="Poll interval (seconds)")
     parser.add_argument("--max-wait", type=int, default=300, help="Max wait time (seconds)")
@@ -156,6 +170,9 @@ def main() -> int:
         batch_size=args.batch_size,
         seed=args.seed,
         raw=not args.no_raw,
+        aspect_ratio=args.aspect_ratio,
+        resolution=args.resolution,
+        image_urls=args.image_url,
     )
     
     # Poll until complete
