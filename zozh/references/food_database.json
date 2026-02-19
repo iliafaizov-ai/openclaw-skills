@@ -1,0 +1,264 @@
+{
+  "comment": "Макронутриенты указаны на 100г продукта (если не указано иное)",
+  
+  "protein_sources": {
+    "яйцо": {
+      "protein": 13, "carbs": 1, "fat": 11, "calories": 155,
+      "portion_g": 50, "healthy": true,
+      "notes": "1 яйцо ≈ 50г. Отличный источник белка и витаминов"
+    },
+    "курица_грудка": {
+      "protein": 23, "carbs": 0, "fat": 2, "calories": 110,
+      "healthy": true,
+      "notes": "Идеально для похудения. Варёная/гриль"
+    },
+    "индейка": {
+      "protein": 25, "carbs": 0, "fat": 1, "calories": 110,
+      "healthy": true
+    },
+    "творог_обезжиренный": {
+      "protein": 18, "carbs": 3, "fat": 0.6, "calories": 90,
+      "healthy": true,
+      "notes": "Медленный белок, хорош на ночь"
+    },
+    "творог_5%": {
+      "protein": 16, "carbs": 2, "fat": 5, "calories": 121,
+      "healthy": true
+    },
+    "творог_9%": {
+      "protein": 16, "carbs": 2, "fat": 9, "calories": 159,
+      "healthy": false,
+      "notes": "Слишком жирный для похудения"
+    },
+    "говядина_постная": {
+      "protein": 22, "carbs": 0, "fat": 7, "calories": 158,
+      "healthy": true
+    },
+    "рыба_белая": {
+      "protein": 20, "carbs": 0, "fat": 2, "calories": 95,
+      "healthy": true,
+      "notes": "Треска, минтай, хек"
+    },
+    "лосось": {
+      "protein": 20, "carbs": 0, "fat": 13, "calories": 208,
+      "healthy": true,
+      "notes": "Омега-3, полезные жиры"
+    },
+    "тунец_консерва": {
+      "protein": 25, "carbs": 0, "fat": 1, "calories": 116,
+      "healthy": true,
+      "notes": "В собственном соку, без масла"
+    },
+    "протеин_сывороточный": {
+      "protein": 80, "carbs": 5, "fat": 3, "calories": 380,
+      "portion_g": 30, "healthy": true,
+      "notes": "1 скуп ≈ 30г, даёт ~24г белка"
+    }
+  },
+  
+  "carbs_sources": {
+    "рис_белый": {
+      "protein": 7, "carbs": 78, "fat": 0.6, "calories": 344,
+      "healthy": false,
+      "notes": "Высокий ГИ, предпочти бурый"
+    },
+    "рис_бурый": {
+      "protein": 7, "carbs": 76, "fat": 2, "calories": 350,
+      "healthy": true,
+      "notes": "Клетчатка, низкий ГИ"
+    },
+    "гречка": {
+      "protein": 13, "carbs": 62, "fat": 3, "calories": 343,
+      "healthy": true,
+      "notes": "Много белка для крупы"
+    },
+    "овсянка": {
+      "protein": 13, "carbs": 66, "fat": 6, "calories": 389,
+      "healthy": true,
+      "notes": "Медленные углеводы, клетчатка"
+    },
+    "картофель": {
+      "protein": 2, "carbs": 17, "fat": 0.1, "calories": 77,
+      "healthy": false,
+      "notes": "Высокий ГИ, ограничивай"
+    },
+    "батат": {
+      "protein": 2, "carbs": 20, "fat": 0.1, "calories": 86,
+      "healthy": true,
+      "notes": "Ниже ГИ чем картофель"
+    },
+    "хлеб_белый": {
+      "protein": 9, "carbs": 49, "fat": 3, "calories": 265,
+      "healthy": false,
+      "notes": "Быстрые углеводы, избегай"
+    },
+    "хлеб_цельнозерновой": {
+      "protein": 10, "carbs": 43, "fat": 3, "calories": 247,
+      "healthy": true
+    },
+    "макароны": {
+      "protein": 11, "carbs": 71, "fat": 1, "calories": 344,
+      "healthy": false,
+      "notes": "Из твёрдых сортов — ok в меру"
+    },
+    "банан": {
+      "protein": 1, "carbs": 23, "fat": 0.3, "calories": 89,
+      "healthy": true,
+      "notes": "Быстрая энергия, хорош до/после тренировки"
+    },
+    "яблоко": {
+      "protein": 0.4, "carbs": 14, "fat": 0.2, "calories": 52,
+      "healthy": true,
+      "notes": "Клетчатка, витамины"
+    }
+  },
+  
+  "vegetables": {
+    "огурец": {
+      "protein": 0.7, "carbs": 3.6, "fat": 0.1, "calories": 15,
+      "healthy": true,
+      "notes": "Почти вода, ешь сколько хочешь"
+    },
+    "помидор": {
+      "protein": 0.9, "carbs": 3.9, "fat": 0.2, "calories": 18,
+      "healthy": true
+    },
+    "салат": {
+      "protein": 1.4, "carbs": 2, "fat": 0.2, "calories": 14,
+      "healthy": true
+    },
+    "капуста": {
+      "protein": 1.8, "carbs": 6, "fat": 0.1, "calories": 25,
+      "healthy": true
+    },
+    "брокколи": {
+      "protein": 3, "carbs": 7, "fat": 0.4, "calories": 34,
+      "healthy": true,
+      "notes": "Витамины, антиоксиданты"
+    },
+    "морковь": {
+      "protein": 1, "carbs": 10, "fat": 0.2, "calories": 41,
+      "healthy": true
+    },
+    "перец": {
+      "protein": 1, "carbs": 6, "fat": 0.3, "calories": 27,
+      "healthy": true
+    }
+  },
+  
+  "fats_sources": {
+    "орехи_грецкие": {
+      "protein": 15, "carbs": 14, "fat": 65, "calories": 654,
+      "portion_g": 30, "healthy": true,
+      "notes": "1 горсть ≈ 30г. Омега-3, но калорийно"
+    },
+    "миндаль": {
+      "protein": 21, "carbs": 22, "fat": 49, "calories": 579,
+      "portion_g": 30, "healthy": true
+    },
+    "авокадо": {
+      "protein": 2, "carbs": 9, "fat": 15, "calories": 160,
+      "healthy": true,
+      "notes": "Полезные жиры, клетчатка"
+    },
+    "масло_оливковое": {
+      "protein": 0, "carbs": 0, "fat": 100, "calories": 884,
+      "portion_g": 10, "healthy": true,
+      "notes": "1 ст.л. ≈ 10г ≈ 88 ккал"
+    },
+    "масло_подсолнечное": {
+      "protein": 0, "carbs": 0, "fat": 100, "calories": 900,
+      "portion_g": 10, "healthy": false,
+      "notes": "Омега-6, лучше оливковое"
+    }
+  },
+  
+  "dairy": {
+    "молоко_1.5%": {
+      "protein": 3, "carbs": 4.7, "fat": 1.5, "calories": 44,
+      "healthy": true
+    },
+    "кефир_1%": {
+      "protein": 3, "carbs": 4, "fat": 1, "calories": 40,
+      "healthy": true
+    },
+    "йогурт_натуральный": {
+      "protein": 5, "carbs": 6, "fat": 3, "calories": 68,
+      "healthy": true
+    },
+    "сыр_твердый": {
+      "protein": 25, "carbs": 0, "fat": 30, "calories": 360,
+      "healthy": false,
+      "notes": "Много жира, ограничивай"
+    }
+  },
+  
+  "snacks_healthy": {
+    "ягоды": {
+      "protein": 1, "carbs": 12, "fat": 0.4, "calories": 57,
+      "healthy": true,
+      "notes": "Антиоксиданты, витамины"
+    },
+    "хлебцы_цельнозерновые": {
+      "protein": 10, "carbs": 70, "fat": 2, "calories": 310,
+      "healthy": true
+    }
+  },
+  
+  "snacks_unhealthy": {
+    "чипсы": {
+      "protein": 6, "carbs": 53, "fat": 30, "calories": 500,
+      "healthy": false,
+      "notes": "Избегай"
+    },
+    "печенье": {
+      "protein": 7, "carbs": 67, "fat": 15, "calories": 437,
+      "healthy": false
+    },
+    "шоколад_молочный": {
+      "protein": 7, "carbs": 54, "fat": 35, "calories": 546,
+      "healthy": false
+    },
+    "шоколад_темный_70%": {
+      "protein": 8, "carbs": 45, "fat": 32, "calories": 531,
+      "healthy": true,
+      "notes": "В меру (20-30г) — ok"
+    },
+    "майонез": {
+      "protein": 3, "carbs": 2, "fat": 67, "calories": 680,
+      "portion_g": 15, "healthy": false,
+      "notes": "1 ст.л. ≈ 100 ккал. Избегай"
+    },
+    "кетчуп": {
+      "protein": 1, "carbs": 22, "fat": 0, "calories": 93,
+      "healthy": false,
+      "notes": "Сахар"
+    }
+  },
+  
+  "beverages": {
+    "вода": {
+      "protein": 0, "carbs": 0, "fat": 0, "calories": 0,
+      "healthy": true,
+      "notes": "Основа ЗОЖ"
+    },
+    "кофе_черный": {
+      "protein": 0, "carbs": 0, "fat": 0, "calories": 2,
+      "healthy": true
+    },
+    "чай": {
+      "protein": 0, "carbs": 0, "fat": 0, "calories": 1,
+      "healthy": true
+    },
+    "сок_апельсиновый": {
+      "protein": 0.7, "carbs": 13, "fat": 0.2, "calories": 45,
+      "healthy": false,
+      "notes": "Сахар без клетчатки, лучше фрукт"
+    },
+    "кола": {
+      "protein": 0, "carbs": 10.6, "fat": 0, "calories": 42,
+      "healthy": false,
+      "notes": "Сахар + химия. Избегай"
+    }
+  }
+}
