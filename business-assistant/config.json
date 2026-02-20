@@ -1,0 +1,48 @@
+{
+  "schedule": {
+    "morning_plan": "09:00",
+    "midday_check": "14:00",
+    "afternoon_check": "17:00",
+    "evening_review": "19:00",
+    "timezone": "Europe/Moscow"
+  },
+  "obsidian": {
+    "vault_path": "/home/clawd/.openclaw/workspace/obsidian",
+    "tasks_sources": [
+      "2. Проекты/ВИЖУ/Задачи.md",
+      "4. Задачи",
+      "1. Дневник"
+    ],
+    "diary_path": "1. Дневник",
+    "template": "templates/daily-plan.md",
+    "projects": [
+      "2. Проекты/ВИЖУ",
+      "2. Проекты/ЭКСПО-2027"
+    ]
+  },
+  "calendar": {
+    "enabled": true,
+    "script_path": "/home/clawd/.openclaw/workspace/calendar/list_events.js",
+    "lookahead_days": 1
+  },
+  "priorities": {
+    "auto_prioritize": true,
+    "consider_deadlines": true,
+    "max_tasks_per_day": 8,
+    "high_priority_projects": ["ЭКСПО", "Рязань", "Казань"],
+    "quick_win_threshold_minutes": 30
+  },
+  "notifications": {
+    "task_reminders": true,
+    "reminder_before_minutes": 30,
+    "persistent_reminders": true
+  },
+  "user": {
+    "name": "Илья",
+    "timezone": "Europe/Moscow",
+    "work_hours": {
+      "start": "09:00",
+      "end": "20:00"
+    }
+  }
+}
